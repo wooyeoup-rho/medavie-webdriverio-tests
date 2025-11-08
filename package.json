@@ -1,0 +1,24 @@
+{
+  "name": "medavie-assessment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "run": "wdio run wdio.conf.ts",
+    "test:desktop": "cross-env VIEWPORT=desktop wdio run wdio.conf.ts",
+    "test:mobile": "cross-env VIEWPORT=mobile wdio run wdio.conf.ts",
+    "test:dev": "cross-env VIEWPORT=desktop wdio run wdio.conf.ts --logLevel error",
+    "test:firefox": "cross-env BROWSER=firefox wdio run wdio.conf.ts",
+    "test:edge": "cross-env BROWSER=edge wdio run wdio.conf.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@wdio/cli": "^9.20.0",
+    "@wdio/cucumber-framework": "^9.20.0",
+    "@wdio/local-runner": "^9.20.0",
+    "@wdio/spec-reporter": "^9.20.0",
+    "cross-env": "^10.1.0"
+  }
+}

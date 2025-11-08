@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "run": "wdio run wdio.conf.ts",
+    "test": "wdio run wdio.conf.ts",
     "test:desktop": "cross-env VIEWPORT=desktop wdio run wdio.conf.ts",
     "test:mobile": "cross-env VIEWPORT=mobile wdio run wdio.conf.ts",
     "test:dev": "cross-env VIEWPORT=desktop wdio run wdio.conf.ts --logLevel error",

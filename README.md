@@ -10,6 +10,9 @@ The suite verifies that, for both English and French sites:
 - The correct contact heading is displayed.
 - The expected Medavie Blue Cross / Croix Bleue Medavie contact numbers are shown.
 
+Automated test results can be seen in the [Actions menu.](https://github.com/wooyeoup-rho/medavie-webdriverio-tests/actions)
+- Runs desktop and mobile tests on Chrome and Firefox.
+
 ## Prerequisites
 1. Node.js
 2. npm

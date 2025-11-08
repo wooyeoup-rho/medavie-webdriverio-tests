@@ -13,11 +13,6 @@ class ContactPage extends Page {
     public async getContactInfo(): Promise<string[]> {
         const items = await this.contactInfoItems;
         await items[0].waitForDisplayed({ timeout: 5000 });
-
-//         const texts = await items.map(async (item) => {
-//             return await item.getText();
-//         });
-
         const itemsArray = Array.from(items);
 
         const texts = await Promise.all(

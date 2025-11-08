@@ -30,6 +30,11 @@ class HomePage extends Page {
     public async goToContact(language: 'en' | 'fr'): Promise<void> {
         const isMobile = await this.hamburgerButton.isDisplayed();
 
+        if (isMobile) {
+            await this.hamburgerButton.waitForClickable({ timeout: 5000 });
+            await this.hamburgerButton.click();
+        }
+
         const link =
             isMobile
                 ? (language === 'en'
@@ -39,10 +44,6 @@ class HomePage extends Page {
                     ? this.desktopContactLinkEn
                     : this.desktopContactLinkFr);
 
-        if (isMobile) {
-            await this.hamburgerButton.waitForClickable({ timeout: 5000 });
-            await this.hamburgerButton.click();
-        }
 
         await link.waitForClickable({ timeout: 5000 });
         await link.click();

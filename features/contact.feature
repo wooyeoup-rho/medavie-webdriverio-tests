@@ -9,6 +9,6 @@ Feature: Medavie Website
       | <atlanticInfo> | <quebecInfo> | <ontarioInfo> | <elseInfo> |
 
     Examples:
-      | language | expectedHeader | atlanticInfo                           | quebecInfo             | ontarioInfo             | elseInfo                            |
-      | en       | Contact       | Atlantic Region: 1-888-227-3400        | Quebec: 1-888-588-1212 | Ontario: 1-800-355-9133 | Elsewhere in Canada: 1-800-667-4511 |
-      | fr       | Coordonnées   | Région de l’Atlantique : 1‑888‑227‑3400 | Québec : 1‑888‑588‑1212 | Ontario : 1-800‑355‑9133 | Ailleurs au Canada : 1‑800‑667‑4511  |
+      | language | expectedHeader | atlanticInfo                            | quebecInfo              | ontarioInfo              | elseInfo                            |
+      | en       | Contact        | Atlantic Region: 1-888-227-3400         | Quebec: 1-888-588-1212  | Ontario: 1-800-355-9133  | Elsewhere in Canada: 1-800-667-4511 |
+      | fr       | Coordonnées    | Région de l’Atlantique : 1‑888‑227‑3400 | Québec : 1‑888‑588‑1212 | Ontario : 1-800‑355‑9133 | Ailleurs au Canada : 1‑800‑667‑4511 |

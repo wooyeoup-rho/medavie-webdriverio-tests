@@ -24,7 +24,7 @@ class HomePage extends Page {
     }
 
     public open(language: string): Promise<void> {
-        return super.open(`https://www.medavie.ca/${language}`);
+        return super.open(language);
     }
 
     public async goToContact(language: 'en' | 'fr'): Promise<void> {
